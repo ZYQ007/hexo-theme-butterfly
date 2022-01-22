@@ -1,8 +1,3 @@
-<div align="right">
-  Language:
-  🇺🇸
-  <a title="Chinese" href="/README_CN.md">🇨🇳</a>
-</div>
 
 # hexo-theme-butterfly
 
@@ -14,96 +9,61 @@
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/theme-butterfly-readme.png)
 
-Demo: 👍 [Butterfly](https://butterfly.js.org/)  ||   🤞 [CrazyWong](https://crazywong.com/)
+文档: 📖 [Butterfly Docs](https://butterfly.js.org/posts/21cfbf15/)
 
-Docs: 📖 [Butterfly Docs](https://butterfly.js.org/posts/21cfbf15/)
 
-Based on [hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody) theme.
 
-## 💻 Installation
+## ⚙ 应用主题
 
-### GIT
-
-> If you are in Mainland China, you can download in [Gitee](https://gitee.com/immyw/hexo-theme-butterfly.git)
-
-Stable branch [recommend]:
+修改hexo配置文件`_config.yml`，把主题改为`Butterfly`
 
 ```
-git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
+theme: butterfly
 ```
 
-Dev branch:
+>如果你沒有pug以及stylus的渲染器，請下載安裝： npm install hexo-renderer-pug hexo-renderer-stylus --save
 
-```
-git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
-```
+## 🎉 特色
 
-### NPM
-
-> It supports Hexo 5.0.0 or later
-
-In Hexo site root directory 
-
-```powershell
-npm i hexo-theme-butterfly
-```
-
-## ⚙ Configuration
-
- Set theme in the hexo work folder's root config file `_config.yml`: 
-
-> theme: butterfly
-
- If you don't have pug & stylus renderer, try this: 
-
-> npm install hexo-renderer-pug hexo-renderer-stylus
-
-## 🎉 Features
-
-- [x] Card UI Design
-- [X] Support sub-menu
-- [x] Two Column designs
-- [x] Responsive Web Design
-- [x] Dark Mode
+- [x] 卡片化设计
+- [X] 支持二级目录
+- [x] 双栏设计
+- [x] 响应式主题
+- [x] 深色模式
 - [x] Pjax
-- [x] Read Mode
-- [x] Conversion between Traditional and Simplified Chinese
-- [X] TOC catalog is available for both computers and mobile phones
-- [X] Color themes (darker/pale night/light/ocean/mac/mac light), support custom colors
-- [X] Code Blocks (Display code language/close or expand Code Blocks/Copy Button/word wrap)
-- [X] Disable copy/Add a Copyright Notice to the Copied Text
-- [X] Search (Algolia SearchZ/Local Search)
-- [x] Mathjax and Katex
-- [x] Built-in 404 page
-- [x] WordCount
-- [x] Related articles
-- [x] Displays outdated notice for a post
-- [x] Share (AddThis/Sharejs/Addtoany)
-- [X] Comment (Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus)
-- [x] Multiple Comment System Support
-- [x] Online Chats (Chatra/Tidio/Daovoice/Gitter/Crisp)
-- [x] Web analytics
-- [x] Google AdSense
-- [x] Webmaster Verification
-- [x] Change website colour scheme
-- [x] Typewriter Effect: activate_power_mode
-- [x] Background effects (Canvas ribbon/canvas_ribbon_piao/canvas_nest)
-- [x] Mouse click effects (Fireworks/Heart/Text)
-- [x] Preloader/Loading Animation
-- [x] Busuanzi visitor counter
-- [x] Medium Zoom/Fancybox
-- [x] Mermaid
-- [x] Justified Gallery
-- [x] Lazyload images
-- [x] Instantpage/Pangu/Snackbar notification toast/PWA......
+- [x] 文章阅读模式
+- [x] 简体繁体转换
+- [X] 电脑手机都可以查看TOC目录
+- [X] 内置多种代码配色（darker/pale night/light/ocean/mac/mac light），可自定义代码配色
+- [X] 代码块显示代码语言/ 关闭或展开代码块/代码复制/代码自动换行
+- [X] 可关闭文字复制/可开启内容复制增加版权信息
+- [X] 两种搜索（Algolia搜索和本地搜索）
+- [x] Mathjax 和 Katex
+- [x] 内置404页面
+- [x] 字数统计
+- [x] 显示相关文章
+- [x] 过期文章提醒
+- [x] 多种分享系统（AddThis/Sharejs/Addtoany）
+- [X] 多种评论系统（Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus）
+- [x] 支持双评论 部署
+- [x] 多种在线聊天（Chatra/Tidio/Daovoice/Gitter/Crisp）
+- [x] 多种分析系统
+- [x] 谷歌广告/动手广告位置
+- [x] 各种站长验证（Google/Bing/Baidu/360/Yandex）
+- [x] 修改网站配色
+- [x] 打字特效 activate_power_mode
+- [x] 多种背景特效（静止彩带/动画彩带/Canvas Nest）
+- [x] 多种鼠标点击特效（烟花/文字/爱心）
+- [x] 内置一种 Preloader 加载动画
+- [x] 访问统计
+- [x] 两种大图模式（Medium Zoom/Fancybox）
+- [x] Mermaid 图标显示
+- [x] 照片墙
+- [x] 图片懒加载
+- [x] Instantpage/Pangu/Snackbar彈窗/PWA......
 
-## ✨ Contributors
 
-<a href="https://github.com/jerryc127/hexo-theme-butterfly/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=jerryc127/hexo-theme-butterfly" />
-</a>
-
-## 📷 Screenshots
+## 📷 截图
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/butterfly-readme-screenshots-1.jpg)
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/butterfly-readme-screenshots-2.jpg)
