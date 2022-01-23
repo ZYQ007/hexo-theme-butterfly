@@ -3,14 +3,10 @@
 # 导航菜单
 menu:
   Home: / || fas fa-home
-  文章: /archives/ || fas fa-archive
-  标签: /tags/ || fas fa-tags
-  分类: /categories/ || fas fa-folder-open
-  列表||fas fa-list:
-    音乐: /music/ || fas fa-music
-    电影: /movies/ || fas fa-video
-  友情链接: /link/ || fas fa-link
-  关于我: /about/ || fas fa-heart
+  文章: /archives/ || fas fa-feather-alt
+  标签: /tags/ || fas fa-anchor
+  分类: /categories/ || fab fa-pagelines
+  关于我: /about/ || fas fa-heartbeat
 
 # 代码块
 # --------------------------------------
@@ -96,7 +92,7 @@ disable_top_img: false
 index_img: https://img.xue65535.cn/img/2022/01/23/390b8fbba6bd4a63f6a5253c4533c282-8b500074.png
 
 # 默认banner图
-default_top_img:
+default_top_img: https://img.xue65535.cn/img/2022/01/23/390b8fbba6bd4a63f6a5253c4533c282-8b500074.png
 
 # 归档页
 archive_img:
