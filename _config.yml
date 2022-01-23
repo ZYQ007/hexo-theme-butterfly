@@ -158,9 +158,9 @@ post_meta:
     tags: true              # true or false 文章頁是否顯示標籤
     label: true             # true or false 顯示描述性文字
 
-# 字數統計    有bug  //TODO
+# 字數統計
 wordcount:
-  enable: false
+  enable: true
   post_wordcount: true
   min2read: true
   total_wordcount: true
@@ -743,13 +743,13 @@ rightside_item_order:
 
 # Lightbox (圖片大圖查看模式)
 # --------------------------------------
-# You can only choose one, or neither (只能選擇一個 或者 兩個都不選)
+# 只能选一个，或者都不开
 
-# medium-zoom
+# medium-zoom 图片大图模式查看 ，和fancybox 互斥，只能开一个
 # https://github.com/francoischalifour/medium-zoom
 medium_zoom: false
 
-# fancybox
+# fancybox  图片大图模式查看
 # http://fancyapps.com/fancybox/3/
 fancybox: true
 
@@ -782,6 +782,8 @@ note:
 # --------------------------------------
 
 # Pjax
+# 当用户点击链接，通过ajax更新页面需要变化的部分，然后使用HTML5的pushState修改浏览器的URL地址。
+# 这样可以不用重复加载相同的资源（css/js）， 从而提升网页的加载速度。
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
@@ -795,25 +797,26 @@ aplayerInject:
   enable: false
   per_page: true
 
-# Snackbar (Toast Notification 彈窗)
+# Snackbar (Toast Notification  toast弹窗)
 # https://github.com/polonel/SnackBar
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
+  enable: true
   position: bottom-left
-  bg_light: '#49b1f5' # The background color of Toast Notification in light mode
-  bg_dark: '#121212' # The background color of Toast Notification in dark mode
+  bg_light: '#49b1f5'       # light mode时弹窗背景
+  bg_dark: '#121212'        # dark mode时弹窗背景
 
 # https://instant.page/
-# prefetch (預加載)
-instantpage: false
+# prefetch   预加载
+# 当鼠标悬停到链接上超过 65 毫秒时，Instantpage 会对该链接进行预加载，可以提升访问速度。
+instantpage: true
 
 # https://github.com/vinta/pangu.js
-# Insert a space between Chinese character and English character (中英文之間添加空格)
+# 中英文之间添加空格
 pangu:
-  enable: false
-  field: site # site/post
+  enable: true
+  field: site         #   site/post
 
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload
@@ -835,15 +838,16 @@ pwa:
   mask_icon: /asset/img/siteicon/safari-pinned-tab.svg
 
 # Open graph meta tags
+# 在 head 里增加一些 meta 资料，例如缩略图、标题、时间等等。当你分享网页到一些平臺时，平臺会读取 Open Graph 的内容，展示缩略图，标题等等信息。
 # https://developers.facebook.com/docs/sharing/webmasters/
 Open_Graph_meta: true
 
-# Add the vendor prefixes to ensure compatibility
+# 适应所有浏览器，开启css前缀
 css_prefix: true
 
-# Inject
-# Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
+# Inject  注入
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
+# 请注意：以标準的html格式添加内容
 inject:
   head:
   # - <link rel="stylesheet" href="/xxx.css">
@@ -851,8 +855,7 @@ inject:
   # - <script src="xxxx"></script>
 
 # CDN
-# Don't modify the following settings unless you know how they work
-# 非必要請不要修改
+# 主题使用到的CDN文件，非必要别修改。
 CDN:
   # main
   main_css:
