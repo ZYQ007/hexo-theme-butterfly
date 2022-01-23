@@ -59,20 +59,21 @@ search:
   # 搜索是否扫描正文
   content: true
 
-# Math (數學)
+# Math 数学公式
 # --------------------------------------
-# About the per_page
-# true 表示每一頁都加載js
-# false 需要時加載，須在使用的 Markdown Front-matter 加上 mathjax: true
 
 # MathJax
 mathjax:
   enable: false
+  # true 表示每一頁都加載js
+  # false 需要時加載，須在使用的 Markdown Front-matter 加上 mathjax: true
   per_page: false
 
 # KaTeX
 katex:
-  enable: false
+  enable: true
+  # true 表示每一页都加载katex.js
+  # false 需要时加载，须在使用的Markdown Front-matter 加上 katex: true
   per_page: false
   hide_scrollbar: true
 
@@ -404,14 +405,14 @@ footer:
 
 
 
-# Analysis
+# 分析统计
 # --------------------------------------
 
-# Baidu Analytics
+# 百度分析
 # https://tongji.baidu.com/web/welcome/login
-baidu_analytics:
+baidu_analytics: 0e1ac92f2ed5ceb713b463f7e6e9d8f7
 
-# Google Analytics
+# Google 分析
 # https://analytics.google.com/analytics/web/
 google_analytics:
 
@@ -430,12 +431,12 @@ microsoft_clarity:
 # Advertisement
 # --------------------------------------
 
-# Google Adsense (谷歌廣告)
+# Google Adsense  谷歌广告
 google_adsense:
   enable: false
   auto_ads: true
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
-  client:
+  client:                 # 个人识别码
   enable_page_level_ads: true
 
 # Insert ads manually (手動插入廣告)
@@ -444,14 +445,14 @@ google_adsense:
 #   aside:
 #   post:
 
-# Verification (站長驗證)
+# 站长验证
 # --------------------------------------
-
+# 直接登陆google站点，和百度资源站点配置，用DNS验证所有权即可。不需要在代码里面配置
 site_verification:
-# - name: google-site-verification
-#   content: xxxxxx
-# - name: baidu-site-verification
-#   content: xxxxxxx
+  - name: google-site-verification
+    content: xxxxxx
+  - name: baidu-site-verification
+    content: xxxxxxx
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
