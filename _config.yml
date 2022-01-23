@@ -130,8 +130,8 @@ cover:
 
 # 默认图，替换无法显示的裂图
 error_img:
-  flink: /img/friend_404.gif
-  post_page: /img/404.jpg
+  flink: https://img.xue65535.cn/img/2022/01/24/3be63c4f03255f404b0d7b19afa9f778-6b1d837f.gif
+  post_page: https://img.xue65535.cn/img/2022/01/24/70ecf00a0eef156909322728c50fc661-c151612e.jpg
 
 # 404页 本地预览 http://localhost/404.html
 error_404:
@@ -182,7 +182,7 @@ toc:
   post: true            # 文章页是否显示
   page: false           # 普通页是否显示
   number: true          # 章节数
-  expand: false         # 是否展开目录
+  expand: true         # 是否展开目录
   style_simple: true    # 简洁模式（侧边栏只显示 TOC, 只对文章页有效 ）
 
 # 文章版权
@@ -589,7 +589,7 @@ blog_title_font:
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
   enable: true
-  icon: # the unicode value of Font Awesome icon, such as '\3423'
+  icon:  '\f6d5'           # the unicode value of Font Awesome icon, such as '\3423'
   icon-top:
 
 # 首页的副标题
@@ -691,7 +691,7 @@ runtimeshow:
 
 # 最新评论
 newest_comments:
-  enable: false
+  enable: true
   sort_order:     # Don't modify the setting unless you know how it works
   limit: 6        # 显示的数量
   storage: 10     # 缓存时间，单位: min,  数据保存到 localStorage 内
