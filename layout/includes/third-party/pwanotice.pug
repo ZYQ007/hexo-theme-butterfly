@@ -1,8 +1,8 @@
 #app-refresh.app-refresh(style='position: fixed;top: -2.2rem;left: 0;right: 0;z-index: 99999;padding: 0 1rem;font-size: 15px;height: 2.2rem;transition: all 0.3s ease;')
     .app-refresh-wrap(style=' display: flex;color: #fff;height: 100%;align-items: center;justify-content: center;')
-        label ✨ 糖果屋上新啦！ 👉
+        label ✨ 一笔淡墨更新了！ 👉
         a(href='javascript:void(0)' onclick='location.reload()')
-            span(style='color: #fff;text-decoration: underline;cursor: pointer;') 🍭查看新品🍬
+            span(style='color: #fff;text-decoration: underline;cursor: pointer;') 🍭去看看🍬
 script.
   if ('serviceWorker' in navigator) {
     if (navigator.serviceWorker.controller) {
@@ -22,11 +22,11 @@ script.
           GLOBAL_CONFIG.Snackbar.bgDark
       var snackbarPos = GLOBAL_CONFIG.Snackbar.position
       Snackbar.show({
-        text: '✨ 糖果屋上新啦！ 👉',
+        text: '✨ 一笔淡墨更新了！ 👉',
         backgroundColor: snackbarBg,
         duration: 500000,
         pos: snackbarPos,
-        actionText: '🍭查看新品🍬',
+        actionText: '🍭去看看🍬',
         actionTextColor: '#fff',
         onActionClick: function(e) {
           location.reload()
