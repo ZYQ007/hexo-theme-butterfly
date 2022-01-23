@@ -1,6 +1,8 @@
 if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
   [data-theme='dark']
-    --global-bg: darken(#121212, 2)
+    //--global-bg: darken(#121212, 2)
+    // 修改主题配色
+    --global-bg: darken(rgb(45 42 46), 2)
     --font-color: alpha(#FFFFFF, .7)
     --hr-border: alpha(#FFFFFF, .4)
     --hr-before-color: alpha(#FFFFFF, .7)
@@ -45,7 +47,7 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
       position: absolute
       width: 100%
       height: 100%
-      background-color: alpha($dark-black, .7)
+      //background-color: alpha($dark-black, .7)
       content: ''
 
     #article-container
@@ -71,6 +73,7 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
         color: #e2f1ff
 
     // 頭部
+
     #page-header
       &.nav-fixed > #nav,
       &.not-top-img > #nav
@@ -91,6 +94,7 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
         filter: brightness(.8)
 
     // hide-tags
+
     .hide-button,
     .btn-beautify,
     .hl-label,
@@ -111,6 +115,7 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
       border-bottom: 1px dashed alpha(#FFFFFF, .1)
 
     // Gitalk
+
     #gitalk-container
       filter: brightness(.8)
 
@@ -118,6 +123,7 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
         fill: alpha(#FFFFFF, .9) !important
 
     // Disqusjs 反代模式下的適配
+
     #disqus_thread
       #dsqjs
         .dsqjs-tab-active,

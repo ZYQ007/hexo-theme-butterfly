@@ -80,8 +80,8 @@ katex:
 # 图像设置
 # --------------------------------------
 
-# Favicon（網站圖標）
-favicon: /img/favicon.png
+# Favicon ico
+favicon: /asset/favicon.ico
 
 # 头像
 avatar:
@@ -93,7 +93,7 @@ avatar:
 disable_top_img: false
 
 # 首页图
-index_img: https://img.xue65535.cn/img/2022/01/22/5d7c4cb6cb96937f12cc7ee4ffbfc3ae-a8c03f2f.jpeg
+index_img: https://img.xue65535.cn/img/2022/01/23/390b8fbba6bd4a63f6a5253c4533c282-8b500074.png
 
 # 默认banner图
 default_top_img:
@@ -141,7 +141,7 @@ error_img:
 error_404:
   enable: true
   subtitle: 'Page Not Found'
-  background: https://img.xue65535.cn/img/2022/01/22/17eedd5b25ae1b9f63c20baae0e6a876-7660c8e9.png
+  background: https://img.xue65535.cn/img/2022/01/23/390b8fbba6bd4a63f6a5253c4533c282-8b500074.png
 
 # 文章元数据
 post_meta:
@@ -454,14 +454,14 @@ site_verification:
   - name: baidu-site-verification
     content: xxxxxxx
 
-# Beautify/Effect (美化/效果)
+# Beautify/Effect  美化效果
 # --------------------------------------
 
-# Theme color for customize
-# Notice: color value must in double quotes like "#000" or may cause error!
+# 自定义主题配色 theme
+# 注意！ 颜色必须放到双引号里面 "#000"，否则会构建报错
 
-# theme_color:
-#   enable: true
+theme_color:
+  enable: false
 #   main: "#49B1F5"
 #   paginator: "#00c4b6"
 #   button_hover: "#FF7242"
@@ -476,12 +476,11 @@ site_verification:
 #   blockquote_background_color: "#49b1f5"
 #   scrollbar_color: "#49b1f5"
 
-# The top_img settings of home page
-# default: top img - full screen, site info - middle (默認top_img全屏，site_info在中間)
-# The position of site info, eg: 300px/300em/300rem/10% (主頁標題距離頂部距離)
-index_site_info_top:
-# The height of top_img, eg: 300px/300em/300rem (主頁top_img高度)
-index_top_img_height:
+# 首页的 top_img 设置
+# 默认top_img全屏，site_info在中间
+# 使用默认, 都无需填写（建议默认）
+index_site_info_top:          # 主页标题距离顶部距离  例如 300px/300em/300rem/10%
+index_top_img_height:         # 主页top_img高度 例如 300px/300em/300rem  不能使用百分比
 
 # The user interface setting of category and tag page (category和tag頁的UI設置)
 # index - same as Homepage UI (index 值代表 UI將與首頁的UI一樣)
@@ -489,13 +488,17 @@ index_top_img_height:
 category_ui: # 留空或 index
 tag_ui: # 留空或 index
 
-# Website Background (設置網站背景)
-# can set it to color or image (可設置圖片 或者 顔色)
-# The formal of image: url(http://xxxxxx.com/xxx.jpg)
+# 网站背景图
+# 可设置成图片或颜色
+# The formal of image: url(http://xxxxxx.com/xxx.jpg)    or color  '#49B202'
 background:
 
-# Footer Background
-footer_bg: false
+# Footer 背景
+# 留空/false - 显示默认颜色
+# img链接 - 显示图片
+# 设置颜色值 - HEX/ RGB /单词 /渐变色都支持
+# true - 显示top_img的图片或颜色
+footer_bg: rgb(45 42 46)
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
@@ -506,22 +509,22 @@ enter_transitions: true
 # Background effects (背景特效)
 # --------------------------------------
 
-# canvas_ribbon (靜止彩帶背景)
+# canvas_ribbon  背景特效 - 静止彩带
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
   enable: false
   size: 150
   alpha: 0.6
   zIndex: -1
-  click_to_change: false
-  mobile: false
+  click_to_change: true         # 设置是否每次点击都更换綵带
+  mobile: true                 # 移动端是否显示
 
-# Fluttering Ribbon (動態彩帶)
+# 动图彩带
 canvas_fluttering_ribbon:
-  enable: false
-  mobile: false
+  enable: true
+  mobile: true
 
-# canvas_nest
+# canvas_nest  背景特效 - 鼠标放上去会跟着跑
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
   enable: false
@@ -531,26 +534,26 @@ canvas_nest:
   count: 99 # the number of lines, default: 99.
   mobile: false
 
-# Typewriter Effect (打字效果)
+# 打字效果   (试过不行，控制台报js错)
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
   enable: false
-  colorful: true # open particle animation (冒光特效)
-  shake: true #  open shake (抖動特效)
+  colorful: true                          #  open particle animation (冒光特效)
+  shake: true                             #  open shake (抖動特效)
   mobile: false
 
-# Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
+#  鼠标点击特效 - 放烟花 （感觉还行）
 fireworks:
-  enable: false
-  zIndex: 9999 # -1 or 9999
-  mobile: false
+  enable: true
+  zIndex: 9999            # -1 or 9999
+  mobile: true
 
-# Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
+# 点击特效 - 冒一个爱心   （一般般）
 click_heart:
   enable: false
   mobile: false
 
-# Mouse click effects: words (鼠標點擊效果: 文字)
+# 点击特效 - 冒文字， 可以随机
 ClickShowText:
   enable: false
   text:
@@ -561,18 +564,19 @@ ClickShowText:
   random: false
   mobile: false
 
-# Default display mode (網站默認的顯示模式)
+# 网站默认主题模式
 # light (default) / dark
-display_mode: light
+display_mode: dark
 
-# Beautify (美化頁面顯示)
+# 页面美化
+# 会改变ol、ul、h1-h5的样式
 beautify:
-  enable: false
-  field: post # site/post
-  title-prefix-icon: # '\f0c1'
-  title-prefix-icon-color: # '#F47466'
+  enable: true
+  field: site                             # site=全站生效  / post=文章页生效
+  title-prefix-icon: '\f56b'              # '\f0c1'   填写的是fontawesome的icon的Unicode
+  title-prefix-icon-color: '#F47466'      # '#F47466'
 
-# Global font settings
+# 全局字体
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
   global-font-size:
@@ -580,7 +584,7 @@ font:
   font-family:
   code-font-family:
 
-# Font settings for the site title and site subtitle
+# 站点标题和副标题
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
   font_link:
@@ -592,13 +596,11 @@ hr_icon:
   icon: # the unicode value of Font Awesome icon, such as '\3423'
   icon-top:
 
-# the subtitle on homepage (主頁subtitle)
+# 首页的副标题
 subtitle:
-  enable: false
-  # Typewriter Effect (打字效果)
-  effect: true
-  # loop (循環打字)
-  loop: true
+  enable: true
+  effect: true              # 是否开启打字机效果
+  loop: true                # 是否循环
   # source 調用第三方服務
   # source: false 關閉調用
   # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/
@@ -608,9 +610,21 @@ subtitle:
   source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
+    - 定义你的，不是身份，而是行动。
+    - 除了你自己，没人会在乎你有多努力。
+    - 为你们，我愿热爱整个世界。
+    - 改变的确很难，但结果值得冒险！
+    - 前行，是人生唯一重要的方向。
+    - 一次只做一件事情，并做到最好。
+    - 寻找自己的路，活出自己的人生。
+    - 简单人生，做出抉择，无问东西。
+    - 博观而约取，厚积而薄发。 —— 苏轼
+    - 少年辛苦终身事，莫向光阴惰寸功。 —— 杜荀鹤
+    - 学习知识要善于思考，思考，再思考，我就是靠这个方法成为科学家的。——爱因斯坦
 
-# Loading Animation (加載動畫)
-preloader: false
+# 加载动画
+# 当进入网页时，因为加载速度的问题，可能会导致top_img图片出现断层显示，或者网页加载不全而出现等待时间，开启preloader后，会显示加载动画，等页面加载完，加载动画会消失。
+preloader: true
 
 # 侧边栏
 # 可自行决定哪个项目需要显示，可决定位置，也可以设置不显示侧边栏。
@@ -812,13 +826,13 @@ lazyload:
 # PWA
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
-# pwa:
-#   enable: false
-#   manifest: /pwa/manifest.json
-#   apple_touch_icon: /pwa/apple-touch-icon.png
-#   favicon_32_32: /pwa/32.png
-#   favicon_16_16: /pwa/16.png
-#   mask_icon: /pwa/safari-pinned-tab.svg
+pwa:
+  enable: true
+  manifest: /manifest.json
+  apple_touch_icon: /asset/img/siteicon/apple-touch-icon.png
+  favicon_32_32: /asset/img/siteicon/favicon-32x32.png
+  favicon_16_16: /asset/img/siteicon/favicon-16x16.png
+  mask_icon: /asset/img/siteicon/safari-pinned-tab.svg
 
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/

@@ -117,6 +117,6 @@ Snackbar:
   day_to_night: 你已切换为深色模式
   night_to_day: 你已切换为浅色模式
 
-loading: 加载中...
+loading: loading ...
 
 error404: 页面没有找到
