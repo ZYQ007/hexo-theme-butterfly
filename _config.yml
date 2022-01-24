@@ -269,12 +269,13 @@ comments:
   card_post_count: false      # 是否在首页文章卡片显示评论数  gitalk、livere 、Giscus 和 utterances 不支持评论数显示
 
 # disqus
+# 国内被墙了
 # https://disqus.com/
 disqus:
   shortname: xue65535
   apikey:                     # For newest comments widget
 
-# 国内使用，在无法访问disqus时，用纯js的形式，通过Disqus API渲染评论列表
+# 一样的，国内被墙了
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
   shortname: xue65535
@@ -457,15 +458,15 @@ site_verification:
 # 注意！ 颜色必须放到双引号里面 "#000"，否则会构建报错
 
 theme_color:
-  enable: false
-#   main: "#49B1F5"
-#   paginator: "#00c4b6"
-#   button_hover: "#FF7242"
-#   text_selection: "#00c4b6"
-#   link_color: "#99a9bf"
-#   meta_color: "#858585"
-#   hr_color: "#A4D8FA"
-#   code_foreground: "#F47466"
+  enable: true
+  #   main: "#49B1F5"
+  #   paginator: "#00c4b6"
+  #   button_hover: "#FF7242"
+  #   text_selection: "#00c4b6"
+  #   link_color: "#99a9bf"
+  #   meta_color: "#858585"
+  #   hr_color: "#A4D8FA"
+  code_foreground: "#57e932"                     # 行内代码颜色
 #   code_background: "rgba(27, 31, 35, .05)"
 #   toc_color: "#00c4b6"
 #   blockquote_padding_color: "#49b1f5"
@@ -589,7 +590,7 @@ blog_title_font:
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
   enable: true
-  icon:  '\f6d5'           # the unicode value of Font Awesome icon, such as '\3423'
+  icon: '\f6d5'           # the unicode value of Font Awesome icon, such as '\3423'
   icon-top:
 
 # 首页的副标题
@@ -691,7 +692,7 @@ runtimeshow:
 
 # 最新评论
 newest_comments:
-  enable: true
+  enable: false
   sort_order:     # Don't modify the setting unless you know how it works
   limit: 6        # 显示的数量
   storage: 10     # 缓存时间，单位: min,  数据保存到 localStorage 内
