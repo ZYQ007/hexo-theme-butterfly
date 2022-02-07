@@ -654,7 +654,7 @@ aside:
   # 分类块
   card_categories:
     enable: true
-    limit: 8        # if set 0 will show all
+    limit: 0        # if set 0 will show all
     expand: false    # none/true/false
     sort_order:      # Don't modify the setting unless you know how it works
   # 标签块
