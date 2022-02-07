@@ -357,13 +357,13 @@ giscus:
 # 在线聊天系统
 # --------------------------------------
 # 在线聊天
-chat_btn: true            # 会在右下角生成一个小按钮，隐藏掉原本服务商的样式。
+chat_btn: false            # 会在右下角生成一个小按钮，隐藏掉原本服务商的样式。
 chat_hide_show: false     # 向上滚动显示原始聊天按钮，向下滚动显示隐藏原始聊天按钮
 
 # chatra
 # https://chatra.io/
 chatra:
-  enable: true
+  enable: false
   id: 6ttKTJ4PiK2ZZRXNs
 
 # tidio
