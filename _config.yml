@@ -158,7 +158,9 @@ post_meta:
 wordcount:
   enable: true
   post_wordcount: true
-  min2read: true
+  min2read:
+    enable: true
+    rate: 200               # 阅读速度 x字/min
   total_wordcount: true
 
 # 主页文章节选

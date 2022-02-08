@@ -4,7 +4,7 @@
     if theme.post_edit.enable
       a.post-edit-link(href=theme.post_edit.url + page.source title=_p('post.edit') target="_blank")
         i.fas.fa-pencil-alt
-        
+
   #post-meta
     .meta-firstline
       if (theme.post_meta.post.date_type)
@@ -37,7 +37,7 @@
               i.fas.fa-angle-right.post-meta-separator
 
     .meta-secondline
-      - let postWordcount = theme.wordcount.enable && (theme.wordcount.post_wordcount || theme.wordcount.min2read)
+      - let postWordcount = theme.wordcount.enable && (theme.wordcount.post_wordcount || theme.wordcount.min2read.enable)
       if (postWordcount)
         span.post-meta-separator |
         span.post-meta-wordcount
@@ -45,13 +45,13 @@
             i.far.fa-file-word.fa-fw.post-meta-icon
             span.post-meta-label= _p('post.wordcount') + ':'
             span.word-count= wordcount(page.content)
-            if theme.wordcount.min2read
+            if theme.wordcount.min2read.enable
               span.post-meta-separator |
-          if theme.wordcount.min2read
+          if theme.wordcount.min2read.enable
             i.far.fa-clock.fa-fw.post-meta-icon
             span.post-meta-label= _p('post.min2read') + ':'
-            span= min2read(page.content, {cn: 350, en: 160}) + _p('post.min2read_unit')
-    
+            span= min2read(page.content, theme.wordcount.min2read.rate) + _p('post.min2read_unit')
+
       //- for pv and count
       mixin pvBlock(parent_id,parent_class,parent_title)
         span.post-meta-separator |
@@ -82,7 +82,7 @@
             span.post-meta-label= _p('post.comments') + ':'
             if block
               block
-        
+
         case whichCount
           when 'Disqus'
           when 'Disqusjs'
