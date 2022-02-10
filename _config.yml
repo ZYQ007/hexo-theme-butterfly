@@ -306,7 +306,7 @@ valine:
   appId: ukjr4cJOHvUAOLdQeEBQxRVo-gzGzoHsz               # leancloud application app id
   appKey: SvGibV4EJthfT5TSv5chHc4c                       # leancloud application app key
   avatar: wavatar                                        # gravatar style https://valine.js.org/#/avatar
-  serverURLs:                                            # 此配置适用于国内自定义域名用户，国外版本会自动检测(无需手动填写)
+  serverURLs: https://comments.xue65535.cn               # 此配置适用于国内自定义域名用户，国外版本会自动检测(无需手动填写)
   bg:                                                    # valine background
   visitor: false                                         # 访问统计
   option: { placeholder: "来都来了，随便说点什么吧..." , requiredFields: [ 'nick' ] }
@@ -695,7 +695,7 @@ runtimeshow:
 
 # 最新评论
 newest_comments:
-  enable: false
+  enable: true
   sort_order:     # Don't modify the setting unless you know how it works
   limit: 6        # 显示的数量
   storage: 10     # 缓存时间，单位: min,  数据保存到 localStorage 内
