@@ -19,85 +19,85 @@ hexo.extend.filter.register('before_generate', () => {
     utils: '/js/utils.js',
 
     // pjax
-    pjax: 'https://cdn.jsdelivr.net/npm/pjax/pjax.min.js',
+    pjax: '/cdn/pjax-0.2.8/pjax.min.js',
 
-    // comments
-    gitalk: 'https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js',
-    gitalk_css: 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css',
-    blueimp_md5: 'https://cdn.jsdelivr.net/npm/blueimp-md5/js/md5.min.js',
-    valine: 'https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js',
-    disqusjs: 'https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js',
-    disqusjs_css: 'https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css',
-    utterances: 'https://utteranc.es/client.js',
-    twikoo: 'https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js',
-    waline: 'https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js',
-    giscus: 'https://giscus.app/client.js',
+    // 评论
+    gitalk: '/cdn/gitalk-1.7.2/gitalk.min.js',
+    gitalk_css: '/cdn/gitalk-1.7.2/gitalk.css',
+    blueimp_md5: '/cdn/blueimp-md5-2.19.0/md5.min.js',
+    valine: '/cdn/valine-1.4.16/Valine.min.js',
+    disqusjs: '/cdn/disqusjs-1.3.0/disqus.js',
+    disqusjs_css: '/cdn/disqusjs-1.3.0/disqusjs.css',
+    utterances: '/cdn/utteranc/client.js',
+    twikoo: '/cdn/twikoo-1.4.18/twikoo.all.min.js',
+    waline: '/cdn/client-1.5.4/Waline.min.js',
+    giscus: '/cdn/giscus/client.js',
 
     // share
     addtoany: 'https://static.addtoany.com/menu/page.js',
-    sharejs: 'https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js',
-    sharejs_css: 'https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css',
+    sharejs: '/cdn/social-share.js-1.0.16/js/social-share.min.js',
+    sharejs_css: '/cdn/social-share.js-1.0.16/css/share.min.css',
 
     // search
     local_search: '/js/search/local-search.js',
     algolia_js: '/js/search/algolia.js',
-    algolia_search_v4: 'https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js',
-    instantsearch_v4: 'https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js',
+    algolia_search_v4: '/cdn/algoliasearch-4.12.1/algoliasearch-lite.umd.js',
+    instantsearch_v4: '/cdn/instantsearch.js-4.38.1/instantsearch.production.min.js',
 
     // math
-    mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
-    katex: 'https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css',
-    katex_copytex: 'https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js',
-    katex_copytex_css: 'https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css',
-    mermaid: 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js',
+    mathjax: '/cdn/mathjax-3.2.0/tex-mml-chtml.js',
+    katex: '/cdn/katex-0.15.2/katex.min.css',
+    katex_copytex: '/cdn/katex-0.15.2/contrib/copy-tex.min.js',
+    katex_copytex_css: '/cdn/katex-0.15.2/contrib/copy-tex.css',
+    mermaid: '/cdn/mermaid-8.14.0/mermaid.min.js',
 
     // count
     busuanzi: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js',
 
     // background effect
-    canvas_ribbon: 'https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js',
-    canvas_fluttering_ribbon: 'https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js',
-    canvas_nest: 'https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js',
+    canvas_ribbon: '/cdn/butterfly-extsrc-1.1.0/canvas-ribbon.min.js',
+    canvas_fluttering_ribbon: '/cdn/butterfly-extsrc-1.1.0/canvas-fluttering-ribbon.min.js',
+    canvas_nest: '/cdn/butterfly-extsrc-1.1.0/canvas-nest.min.js',
 
-    lazyload: 'https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js',
-    instantpage: 'https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js',
-    typed: 'https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js',
-    pangu: 'https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js',
+    lazyload: '/cdn/vanilla-lazyload-17.5.0/lazyload.iife.min.js',
+    instantpage: '/cdn/instant/instantpage.js',
+    typed: '/cdn/typed.js-2.0.12/typed.min.js',
+    pangu: '/cdn/pangu-4.0.7/browser/pangu.min.js',
 
     // photo
-    fancybox_css_v4: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css',
-    fancybox_v4: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js',
-    medium_zoom: 'https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js',
+    fancybox_css_v4: '/cdn/ui-4.0.25/fancybox.css',
+    fancybox_v4: '/cdn/ui-4.0.25/fancybox.umd.js',
+    medium_zoom: '/cdn/medium-zoom-1.0.6/medium-zoom.min.js',
 
     // snackbar
-    snackbar_css: 'https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css',
-    snackbar: 'https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js',
+    snackbar_css: '/cdn/node-snackbar-0.1.16/snackbar.min.css',
+    snackbar: '/cdn/node-snackbar-0.1.16/snackbar.min.js',
 
     // effect
-    activate_power_mode: 'https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js',
-    fireworks: 'https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js',
-    click_heart: 'https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js',
-    ClickShowText: 'https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js',
+    activate_power_mode: '/cdn/butterfly-extsrc-1.1.0/activate-power-mode.min.js',
+    fireworks: '/cdn/butterfly-extsrc-1.1.0/fireworks.min.js',
+    click_heart: '/cdn/butterfly-extsrc-1.1.0/click-heart.min.js',
+    ClickShowText: '/cdn/butterfly-extsrc-1.1.0/click-show-text.min.js',
 
     // fontawesome
-    fontawesome: 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css',
+    fontawesome: '/cdn/fontawesome-free-6.0.0/css/all.min.css',
 
     // Conversion between Traditional and Simplified Chinese
     translate: '/js/tw_cn.js',
 
     // flickr-justified-gallery
-    flickr_justified_gallery_js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
-    flickr_justified_gallery_css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css',
+    flickr_justified_gallery_js: '/cdn/flickr-justified-gallery-2.0.0/fjGallery.min.js',
+    flickr_justified_gallery_css: '/cdn/flickr-justified-gallery-2.0.0/fjGallery.css',
 
     // aplayer
-    aplayer_css: 'https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css',
-    aplayer_js: 'https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js',
-    meting_js: 'https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js',
+    aplayer_css: '/cdn/aplayer-1.10.1/APlayer.min.css',
+    aplayer_js: '/cdn/aplayer-1.10.1/APlayer.min.js',
+    meting_js: '/cdn/metingjs-1.2/Meting.min.js',
 
     // Prism.js
-    prismjs_js: 'https://cdn.jsdelivr.net/npm/prismjs/prism.min.js',
-    prismjs_lineNumber_js: 'https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js',
-    prismjs_autoloader: 'https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js'
+    prismjs_js: '/cdn/prismjs-1.26.0/prism.js',
+    prismjs_lineNumber_js: '/cdn/prismjs-1.26.0/plugins/line-numbers/prism-line-numbers.min.js',
+    prismjs_autoloader: '/cdn/prismjs-1.26.0/plugins/autoloader/prism-autoloader.min.js'
   }
 
   // delete null value
