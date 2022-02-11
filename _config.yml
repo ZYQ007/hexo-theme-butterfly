@@ -683,9 +683,9 @@ aside:
 
 # 访问统计    更多详细：http://busuanzi.ibruce.info/
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # 站点运行时长
 # 格式: 月/日/年 时间    也可以写成 年/月/日 时间
